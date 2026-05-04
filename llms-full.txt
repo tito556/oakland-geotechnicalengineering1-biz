@@ -1,0 +1,62 @@
+# Oakland
+
+> Geotechnical engineering company in United States, providing professional services in soil mechanics, foundation engineering and site investigation.
+
+## Services
+- [Atterberg Limits](https://oakland.geotechnicalengineering1.biz/atterberg-limits/)
+- [Base Isolation Seismic Design](https://oakland.geotechnicalengineering1.biz/base-isolation-seismic-design/)
+- [Collapsible Soil Evaluation](https://oakland.geotechnicalengineering1.biz/collapsible-soil-evaluation/)
+- [Cone Penetration](https://oakland.geotechnicalengineering1.biz/cone-penetration/)
+- [Debris Flow Analysis](https://oakland.geotechnicalengineering1.biz/debris-flow-analysis/)
+- [Deep Soil Mixing](https://oakland.geotechnicalengineering1.biz/deep-soil-mixing/)
+- [Dynamic Compaction Design](https://oakland.geotechnicalengineering1.biz/dynamic-compaction-design/)
+- [Electrical Resistivity Ves](https://oakland.geotechnicalengineering1.biz/electrical-resistivity-ves/)
+- [Existing Pavement Evaluation](https://oakland.geotechnicalengineering1.biz/existing-pavement-evaluation/)
+- [Exploratory Pit](https://oakland.geotechnicalengineering1.biz/exploratory-pit/)
+- [Factor Safety](https://oakland.geotechnicalengineering1.biz/factor-safety/)
+- [Field Density](https://oakland.geotechnicalengineering1.biz/field-density/)
+- [Field Vane Shear](https://oakland.geotechnicalengineering1.biz/field-vane-shear/)
+- [Flat Dilatometer](https://oakland.geotechnicalengineering1.biz/flat-dilatometer/)
+- [Flexible Pavement Design](https://oakland.geotechnicalengineering1.biz/flexible-pavement-design/)
+- [Foundations](https://oakland.geotechnicalengineering1.biz/foundations/)
+- [Geogrid Specification](https://oakland.geotechnicalengineering1.biz/geogrid-specification/)
+- [Geophysics](https://oakland.geotechnicalengineering1.biz/geophysics/)
+- [Geotechnical Analysis Soft Soil](https://oakland.geotechnicalengineering1.biz/geotechnical-analysis-soft-soil/)
+- [Geotechnical Design Deep Excavations](https://oakland.geotechnicalengineering1.biz/geotechnical-design-deep-excavations/)
+- [Geotechnical Drainage Design](https://oakland.geotechnicalengineering1.biz/geotechnical-drainage-design/)
+- [Geotechnical Slope Monitoring](https://oakland.geotechnicalengineering1.biz/geotechnical-slope-monitoring/)
+- [Geotextile Specification](https://oakland.geotechnicalengineering1.biz/geotextile-specification/)
+- [Ground Improvement](https://oakland.geotechnicalengineering1.biz/ground-improvement/)
+- [Ground Penetrating Radar](https://oakland.geotechnicalengineering1.biz/ground-penetrating-radar/)
+- [Grouting Design](https://oakland.geotechnicalengineering1.biz/grouting-design/)
+- [Hvsr Microtremor Survey](https://oakland.geotechnicalengineering1.biz/hvsr-microtremor-survey/)
+- [In Situ Testing](https://oakland.geotechnicalengineering1.biz/in-situ-testing/)
+- [Investigation](https://oakland.geotechnicalengineering1.biz/investigation/)
+- [Jet Grouting Design](https://oakland.geotechnicalengineering1.biz/jet-grouting-design/)
+- [Laboratory](https://oakland.geotechnicalengineering1.biz/laboratory/)
+- [Laboratory Permeability](https://oakland.geotechnicalengineering1.biz/laboratory-permeability/)
+- [Landfill Geotechnics](https://oakland.geotechnicalengineering1.biz/landfill-geotechnics/)
+- [Landslide Assessment](https://oakland.geotechnicalengineering1.biz/landslide-assessment/)
+- [Lime Cement Stabilization](https://oakland.geotechnicalengineering1.biz/lime-cement-stabilization/)
+- [Micropile Design](https://oakland.geotechnicalengineering1.biz/micropile-design/)
+- [Oedometer Consolidation](https://oakland.geotechnicalengineering1.biz/oedometer-consolidation/)
+- [Organic Soil Management](https://oakland.geotechnicalengineering1.biz/organic-soil-management/)
+- [Pavement Subgrade Design](https://oakland.geotechnicalengineering1.biz/pavement-subgrade-design/)
+- [Prefabricated Vertical Drain](https://oakland.geotechnicalengineering1.biz/prefabricated-vertical-drain/)
+- [Preloading Design](https://oakland.geotechnicalengineering1.biz/preloading-design/)
+- [Preloading Surcharge Design](https://oakland.geotechnicalengineering1.biz/preloading-surcharge-design/)
+- [Refraction Reflection](https://oakland.geotechnicalengineering1.biz/refraction-reflection/)
+- [Residual Soil Characterization](https://oakland.geotechnicalengineering1.biz/residual-soil-characterization/)
+- [Retaining Wall Design](https://oakland.geotechnicalengineering1.biz/retaining-wall-design/)
+- [Rigid Pavement Design](https://oakland.geotechnicalengineering1.biz/rigid-pavement-design/)
+- [Road Embankment Design](https://oakland.geotechnicalengineering1.biz/road-embankment-design/)
+- [Road Geotechnics](https://oakland.geotechnicalengineering1.biz/road-geotechnics/)
+- [Road Subgrade Design](https://oakland.geotechnicalengineering1.biz/road-subgrade-design/)
+- [Seismic](https://oakland.geotechnicalengineering1.biz/seismic/)
+
+## Contact
+- Website: https://oakland.geotechnicalengineering1.biz/
+
+## About
+This page provides information about geotechnical engineering services available in United States.
+The company complies with local and international standards including ASTM, ISO and country-specific norms.
