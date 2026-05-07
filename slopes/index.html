@@ -19,85 +19,82 @@
 <meta name="twitter:description" content="Oakland’s slopes are shaped by Franciscan Complex bedrock, marine terrace deposits, and deep colluvial soils, creating conditions where even moderate gradi">
 <meta name="twitter:image" content="https://oakland.geotechnicalengineering1.biz/img/soil-erosion-analysis-1.webp">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;Georgia,serif;background:#FAFAFA;color:#18181B;line-height:1.7;font-size:16px}
-a{color:#A78BFA;text-decoration:none}
+@media(max-width:900px){.layout{grid-template-columns:1fr}
 a:hover{color:#8B5CF6}
-/* HEADER DARK */
-.header{background:#09090B;color:#FFF;padding:3rem 3rem 4rem}
-.header-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2.5rem}
-.brand{display:flex;align-items:flex-start;gap:1rem}
-.brand-logo{width:50px;height:50px;border:2px solid #FFF;position:relative;display:flex;align-items:center;justify-content:center}
-.brand-logo::before{content:"+";color:#FFF;font-size:1.6rem;font-weight:300}
-.brand-text{margin-top:.3rem}
-.brand-name{font-family:Impact, "Arial Black", sans-serif;serif;font-weight:700;letter-spacing:.15em;font-size:1rem;color:#FFF}
+details.faq[open] summary{margin-bottom:.7rem;color:#8B5CF6}
+.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s,transform .2s}
+details.faq{background:#FAFAFA;border:1px solid #E5E5E5;padding:1rem 1.3rem;margin-bottom:.7rem;cursor:pointer}
 .brand-city{font-size:.82rem;color:#888;margin-top:.2rem}
-.header-email{color:#FFF;font-size:.88rem}
-.crumb{font-size:.82rem;color:rgba(255,255,255,.85);margin-bottom:.8rem}
-.crumb a{color:#FFF;text-decoration:underline;font-weight:600}
-.crumb a:hover{color:#A78BFA}
-.header h1{font-family:Impact, "Arial Black", sans-serif;serif;font-weight:700;font-size:clamp(2rem,4vw,2.8rem);color:#FFF;letter-spacing:-.01em;line-height:1.15}
-/* LAYOUT */
-.layout{display:grid;grid-template-columns:240px 1fr;gap:0;max-width:1200px;margin:0 auto;padding:2rem}
-/* SIDEBAR */
-aside{background:#09090B;color:#FFF;padding:1rem 0;align-self:start;position:sticky;top:1rem;border-radius:0}
-.sb-home{display:block;padding:1rem 1.5rem;font-family:Impact, "Arial Black", sans-serif;serif;font-weight:700;color:#FFF;border-bottom:1px solid #222;letter-spacing:.02em}
-aside details{border-bottom:1px solid #222}
-aside details summary{padding:.85rem 1.5rem;cursor:pointer;list-style:none;color:#E5E5E5;font-size:.92rem;display:flex;justify-content:space-between;align-items:center}
-aside details summary::-webkit-details-marker{display:none}
-aside details[open] summary{background:#181818;color:#A78BFA}
-aside details summary .arr{color:#666;font-size:.75rem;transition:transform .2s}
+a{color:#A78BFA;text-decoration:none}
+.crumb-2352 a:hover{color:#A78BFA}
 aside details[open] summary .arr{transform:rotate(90deg);color:#A78BFA}
-.sb-sub{background:#181818;padding:.3rem 0 .8rem}
-.sb-sub a{display:block;padding:.45rem 1.5rem .45rem 2rem;color:#BBB;font-size:.85rem;border-left:2px solid transparent}
-.sb-sub a:hover{color:#A78BFA;border-left-color:#A78BFA;background:#0F0F0F}
+.cat-arrow{display:inline-block;transition:transform .2s ease;font-size:.85rem}
+.cat-sub a:hover{opacity:1;background:rgba(255,255,255,.05)}
+.brand-logo{width:50px;height:50px;border:2px solid #FFF;position:relative;display:flex;align-items:center;justify-content:center}
+.header h1{font-family:Impact, "Arial Black", sans-serif;serif;font-weight:700;font-size:clamp(2rem,4vw,2.8rem);color:#FFF;letter-spacing:-.01em;line-height:1.15}
 /* MAIN */
 main{background:#FFF;padding:3rem 3rem;min-height:60vh}
-main h2{font-family:Impact, "Arial Black", sans-serif;serif;font-weight:700;font-size:1.6rem;color:#18181B;margin:2rem 0 1rem;letter-spacing:.01em}
-main p{margin-bottom:1.1rem;color:#333;line-height:1.75;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.cat-sub{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
+.crumb-2352 a{color:#FFF;text-decoration:underline;font-weight:600}
+.sb-sub a{display:block;padding:.45rem 1.5rem .45rem 2rem;color:#BBB;font-size:.85rem;border-left:2px solid transparent}
+aside details{border-bottom:1px solid #222}
+.cat-toggle[aria-expanded="true"] .cat-arrow{transform:rotate(180deg)}
+/* LAYOUT */
+.layout{display:grid;grid-template-columns:240px 1fr;gap:0;max-width:1200px;margin:0 auto;padding:2rem}
+.sb-home{display:block;padding:1rem 1.5rem;font-family:Impact, "Arial Black", sans-serif;serif;font-weight:700;color:#FFF;border-bottom:1px solid #222;letter-spacing:.02em}
+.brand-logo::before{content:"+";color:#FFF;font-size:1.6rem;font-weight:300}
+details.faq p{color:#444;margin:0}
+.cat-name:hover{text-decoration:underline;text-underline-offset:3px}
+.cat-toggle:hover{background:rgba(255,255,255,.1)}
+.header-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2.5rem}
+footer a{color:#A78BFA}
+.sb-sub a:hover{color:#A78BFA;border-left-color:#A78BFA;background:#0F0F0F}
+aside details summary .arr{color:#666;font-size:.75rem;transition:transform .2s}
 main p:first-child{font-size:1.05rem;color:#333}
+table th{background:#09090B;color:#FFF;text-align:left;padding:.7rem 1rem;font-size:.85rem;letter-spacing:.05em;font-weight:700}
+.brand-name{font-family:Impact, "Arial Black", sans-serif;serif;font-weight:700;letter-spacing:.15em;font-size:1rem;color:#FFF}
+aside details summary{padding:.85rem 1.5rem;cursor:pointer;list-style:none;color:#E5E5E5;font-size:.92rem;display:flex;justify-content:space-between;align-items:center}aside{position:static}
+.brand{display:flex;align-items:flex-start;gap:1rem}
+aside details[open] summary{background:#181818;color:#A78BFA}
+details.faq summary{font-weight:700;color:#18181B;list-style:none;font-family:Impact, "Arial Black", sans-serif;serif}
+aside details summary::-webkit-details-marker{display:none}
+table td{padding:.7rem 1rem;border-bottom:1px solid #E5E5E5;color:#18181B}
+.cat-sub a{display:block;padding:.5rem 1.1rem .5rem 1.8rem;color:inherit;text-decoration:none;font-size:.92rem;opacity:.85;transition:opacity .15s,background .15s}
+.cat-row{display:flex;align-items:stretch;justify-content:space-between;background:transparent;transition:background .15s}
+main p{margin-bottom:1.1rem;color:#333;line-height:1.75;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+main h2{font-family:Impact, "Arial Black", sans-serif;serif;font-weight:700;font-size:1.6rem;color:#18181B;margin:2rem 0 1rem;letter-spacing:.01em}
+.cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
+.brand-text{margin-top:.3rem}
+*{margin:0;padding:0;box-sizing:border-box}
+footer{background:#09090B;color:#AAA;padding:2rem 3rem;font-size:.82rem;text-align:center;margin-top:3rem}
 
 
 
 
 table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;serif}
-table th{background:#09090B;color:#FFF;text-align:left;padding:.7rem 1rem;font-size:.85rem;letter-spacing:.05em;font-weight:700}
-table td{padding:.7rem 1rem;border-bottom:1px solid #E5E5E5;color:#18181B}
-details.faq{background:#FAFAFA;border:1px solid #E5E5E5;padding:1rem 1.3rem;margin-bottom:.7rem;cursor:pointer}
-details.faq summary{font-weight:700;color:#18181B;list-style:none;font-family:Impact, "Arial Black", sans-serif;serif}
-details.faq[open] summary{margin-bottom:.7rem;color:#8B5CF6}
-details.faq p{color:#444;margin:0}
-footer{background:#09090B;color:#AAA;padding:2rem 3rem;font-size:.82rem;text-align:center;margin-top:3rem}
-footer a{color:#A78BFA}
-@media(max-width:900px){.layout{grid-template-columns:1fr}aside{position:static}}
-
-.cat-item{margin:0;border-bottom:1px solid rgba(255,255,255,.05)}
-.cat-row{display:flex;align-items:stretch;justify-content:space-between;background:transparent;transition:background .15s}
 .cat-row:hover{background:rgba(255,255,255,.05)}
-.cat-name{flex:1;padding:.85rem 1.1rem;color:inherit;text-decoration:none;font-weight:600;line-height:1.3;display:block}
-.cat-name:hover{text-decoration:underline;text-underline-offset:3px}
-.cat-toggle{width:48px;background:transparent;border:none;border-left:1px solid rgba(255,255,255,.08);color:inherit;cursor:pointer;font-size:1.05rem;padding:0;display:flex;align-items:center;justify-content:center;transition:background .15s,transform .2s}
-.cat-toggle:hover{background:rgba(255,255,255,.1)}
+.crumb-2352{font-size:.82rem;color:rgba(255,255,255,.85);margin-bottom:.8rem}
+.header-email{color:#FFF;font-size:.88rem}
+/* HEADER DARK */
+.header{background:#09090B;color:#FFF;padding:3rem 3rem 4rem}
+body{font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;Georgia,serif;background:#FAFAFA;color:#18181B;line-height:1.7;font-size:16px}
 .cat-toggle[aria-expanded="true"]{transform:none}
-.cat-toggle[aria-expanded="true"] .cat-arrow{transform:rotate(180deg)}
-.cat-arrow{display:inline-block;transition:transform .2s ease;font-size:.85rem}
-.cat-sub{padding:.4rem 0 .8rem;background:rgba(0,0,0,.15)}
-.cat-sub a{display:block;padding:.5rem 1.1rem .5rem 1.8rem;color:inherit;text-decoration:none;font-size:.92rem;opacity:.85;transition:opacity .15s,background .15s}
-.cat-sub a:hover{opacity:1;background:rgba(255,255,255,.05)}
-</style><style id="layout-override">
+/* SIDEBAR */
+aside{background:#09090B;color:#FFF;padding:1rem 0;align-self:start;position:sticky;top:1rem;border-radius:0}
+.sb-sub{background:#181818;padding:.3rem 0 .8rem}
+
+.cat-item{margin:0;border-bottom:1px solid rgba(255,255,255,.05)}</style><style>
 @media(min-width:901px){
   .content-area{display:flex!important;gap:1.5rem!important;align-items:flex-start!important}
-  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
-  .sidebar nav,.sidebar .nav{display:block!important}
-  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}
   aside{align-self:start!important}
+  .sidebar nav,.sidebar .nav{display:block!important}
   .navbar{display:flex!important;align-items:center!important;justify-content:space-between!important}
-  .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
   main{flex:1!important;min-width:0!important}
-  body{background:#FAFAFA!important;color:#18181B!important}
-}
+  .navbar .nav{display:flex!important;flex-wrap:nowrap!important;gap:1.2rem!important;align-items:center!important;overflow:visible!important;justify-content:space-between!important}
+  .sidebar{width:240px!important;flex-shrink:0!important;background:#0A0A0A!important;color:#FFF!important;border-radius:10px!important;position:sticky!important;top:1rem!important;max-height:calc(100vh - 2rem)!important;overflow-y:auto!important}
 img{max-width:100%!important;height:auto!important}
-</style><link rel="stylesheet" href="/css/leaflet-2352.css"><script src="/js/leaflet-2352.js"></script><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://oakland.geotechnicalengineering1.biz/slopes/", "url": "https://oakland.geotechnicalengineering1.biz/slopes/", "name": "Slopes in Oakland – USA", "inLanguage": "en", "description": "Oakland’s slopes are shaped by Franciscan Complex bedrock, marine terrace deposits, and deep colluvial soils, creating conditions where even moderate gradi", "isPartOf": {"@type": "WebSite", "@id":"https://oakland.geotechnicalengineering1.biz/#website-2352", "url": "https://oakland.geotechnicalengineering1.biz"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://oakland.geotechnicalengineering1.biz/"}, {"@type": "ListItem", "position": 2, "name": "Slopes", "item": "https://oakland.geotechnicalengineering1.biz/slopes/"}]}, {"@type": "ItemList", "name": "Slopes", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://oakland.geotechnicalengineering1.biz/soil-erosion-analysis/", "name": "Soil erosion analysis"}, {"@type": "ListItem", "position": 2, "url": "https://oakland.geotechnicalengineering1.biz/slope-stability-analysis/", "name": "Slope stability analysis"}, {"@type": "ListItem", "position": 3, "url": "https://oakland.geotechnicalengineering1.biz/debris-flow-analysis/", "name": "Debris flow analysis"}, {"@type": "ListItem", "position": 4, "url": "https://oakland.geotechnicalengineering1.biz/factor-safety/", "name": "Factor of safety (FS) calculation"}, {"@type": "ListItem", "position": 5, "url": "https://oakland.geotechnicalengineering1.biz/slope-stabilization-design/", "name": "Slope stabilization design"}, {"@type": "ListItem", "position": 6, "url": "https://oakland.geotechnicalengineering1.biz/retaining-wall-design/", "name": "Retaining wall design"}, {"@type": "ListItem", "position": 7, "url": "https://oakland.geotechnicalengineering1.biz/sheet-pile-wall-design/", "name": "Sheet pile wall design"}, {"@type": "ListItem", "position": 8, "url": "https://oakland.geotechnicalengineering1.biz/landslide-assessment/", "name": "Landslide assessment"}, {"@type": "ListItem", "position": 9, "url": "https://oakland.geotechnicalengineering1.biz/geotechnical-slope-monitoring/", "name": "Geotechnical slope monitoring (monthly)"}]}]}</script></head><body>
+  body{background:#FAFAFA!important;color:#18181B!important}
+  .layout{display:grid!important;grid-template-columns:240px 1fr!important;gap:0!important;max-width:1200px!important;margin:0 auto!important;padding:2rem!important}</style><link rel="stylesheet" href="/css/leaflet-2352.css"><script src="/js/leaflet-2352.js"></script><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"inLanguage":"en","@id":"https://oakland.geotechnicalengineering1.biz/slopes/","url":"https://oakland.geotechnicalengineering1.biz/slopes/","name":"Slopes in Oakland – USA","description":"Oakland’s slopes are shaped by Franciscan Complex bedrock, marine terrace deposits, and deep colluvial soils, creating conditions where even moderate gradi","@type":"WebPage","isPartOf":{"url":"https://oakland.geotechnicalengineering1.biz","@id":"https://oakland.geotechnicalengineering1.biz/#website-2352","@type":"WebSite"}},{"itemListElement":[{"item":"https://oakland.geotechnicalengineering1.biz/","position":1,"name":"Home","@type":"ListItem"},{"item":"https://oakland.geotechnicalengineering1.biz/slopes/","position":2,"name":"Slopes","@type":"ListItem"}],"@type":"BreadcrumbList"},{"itemListElement":[{"url":"https://oakland.geotechnicalengineering1.biz/soil-erosion-analysis/","position":1,"name":"Soil erosion analysis","@type":"ListItem"},{"url":"https://oakland.geotechnicalengineering1.biz/slope-stability-analysis/","position":2,"name":"Slope stability analysis","@type":"ListItem"},{"url":"https://oakland.geotechnicalengineering1.biz/debris-flow-analysis/","position":3,"name":"Debris flow analysis","@type":"ListItem"},{"url":"https://oakland.geotechnicalengineering1.biz/factor-safety/","position":4,"name":"Factor of safety (FS) calculation","@type":"ListItem"},{"url":"https://oakland.geotechnicalengineering1.biz/slope-stabilization-design/","position":5,"name":"Slope stabilization design","@type":"ListItem"},{"url":"https://oakland.geotechnicalengineering1.biz/retaining-wall-design/","position":6,"name":"Retaining wall design","@type":"ListItem"},{"url":"https://oakland.geotechnicalengineering1.biz/sheet-pile-wall-design/","position":7,"name":"Sheet pile wall design","@type":"ListItem"},{"url":"https://oakland.geotechnicalengineering1.biz/landslide-assessment/","position":8,"name":"Landslide assessment","@type":"ListItem"},{"url":"https://oakland.geotechnicalengineering1.biz/geotechnical-slope-monitoring/","position":9,"name":"Geotechnical slope monitoring (monthly)","@type":"ListItem"}],"name":"Slopes","@type":"ItemList"}]}</script></head><body>
 
 <header class="header">
     <div class="header-top">
@@ -110,7 +107,7 @@ img{max-width:100%!important;height:auto!important}
         </div>
         <a href="mailto:contact@geotechnicalengineering1.biz" class="header-email">contact@geotechnicalengineering1.biz</a>
     </div>
-    <div class="crumb"><a href="/">Home</a> › <a href="#">Laboratory</a> › <span>Límites de Atterberg</span></div>
+    <div class="crumb-2352"><a href="/">Home</a> › <a href="#">Laboratory</a> › <span>Límites de Atterberg</span></div>
     <h1>Slopes in Oakland</h1>
 </header>
 
@@ -118,72 +115,12 @@ img{max-width:100%!important;height:auto!important}
     <aside><a href="/" class="sb-home">Home</a><div class="cat-item" data-cat="investigation"><div class="cat-row"><a href="../investigation/" class="cat-name">Investigation</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Investigation"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="../exploratory-pit/">Exploratory test pit</a><a href="../cone-penetration/">CPT (Cone Penetration Test)</a><a href="../standard-penetration/">SPT (Standard Penetration Test)</a></div></div><div class="cat-item" data-cat="in-situ-testing"><div class="cat-row"><a href="../in-situ-testing/" class="cat-name">In-Situ Testing</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir In-Situ Testing"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="../field-density/">Field density test (sand cone method)</a><a href="../flat-dilatometer/">Flat Dilatometer Test (DMT)</a><a href="../undisturbed-sampling/">Undisturbed sampling (Shelby tube)</a><a href="../field-vane-shear/">Field vane shear test (VST)</a></div></div><div class="cat-item" data-cat="laboratory"><div class="cat-row"><a href="../laboratory/" class="cat-name">Laboratory</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Laboratory"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="../residual-soil-characterization/">Residual soil characterization</a><a href="../unconfined-compression/">Unconfined compression test (UCS)</a><a href="../oedometer-consolidation/">Oedometer consolidation test</a><a href="../standard-modified/">Proctor test (Standard or Modified)</a><a href="../triaxial/">Triaxial test</a><a href="../soil-mechanics-study/">Soil mechanics study</a><a href="../atterberg-limits/">Atterberg limits</a><a href="../laboratory-permeability/">Laboratory permeability test (falling/constant head)</a></div></div><div class="cat-item" data-cat="geophysics"><div class="cat-row"><a href="../geophysics/" class="cat-name">Geophysics</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Geophysics"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="../ground-penetrating-radar/">GPR (Ground Penetrating Radar) survey</a><a href="../shear-wave-velocity/">MASW / VS30 (shear wave velocity)</a><a href="../hvsr-microtremor-survey/">HVSR microtremor survey (Nakamura method)</a><a href="../electrical-resistivity-ves/">Electrical resistivity / VES (Vertical Electrical Sounding)</a><a href="../refraction-reflection/">Seismic tomography (refraction/reflection)</a></div></div><div class="cat-item" data-cat="foundations"><div class="cat-row"><a href="../foundations/" class="cat-name">Foundations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Foundations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="../shallow-foundation-design/">Shallow foundation design</a><a href="../micropile-design/">Micropile design</a><a href="../collapsible-soil-evaluation/">Collapsible soil evaluation</a></div></div><div class="cat-item" data-cat="slopes"><div class="cat-row"><a href="../slopes/" class="cat-name">Slopes</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Slopes"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="../soil-erosion-analysis/">Soil erosion analysis</a><a href="../slope-stability-analysis/">Slope stability analysis</a><a href="../debris-flow-analysis/">Debris flow analysis</a><a href="../factor-safety/">Factor of safety (FS) calculation</a><a href="../slope-stabilization-design/">Slope stabilization design</a><a href="../retaining-wall-design/">Retaining wall design</a><a href="../sheet-pile-wall-design/">Sheet pile wall design</a><a href="../landslide-assessment/">Landslide assessment</a><a href="../geotechnical-slope-monitoring/">Geotechnical slope monitoring (monthly)</a></div></div><div class="cat-item" data-cat="ground-improvement"><div class="cat-row"><a href="../ground-improvement/" class="cat-name">Ground Improvement</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Ground Improvement"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="../stone-column-design/">Stone column design</a><a href="../dynamic-compaction-design/">Dynamic compaction design</a><a href="../deep-soil-mixing/">Deep Soil Mixing (DSM) design</a><a href="../geotechnical-drainage-design/">Geotechnical drainage design</a><a href="../prefabricated-vertical-drain/">Prefabricated vertical drain (PVD) design</a><a href="../grouting-design/">Grouting design</a><a href="../jet-grouting-design/">Jet grouting design</a><a href="../preloading-design/">Preloading design (without surcharge)</a><a href="../preloading-surcharge-design/">Preloading with surcharge design</a><a href="../vibrocompaction-design/">Vibrocompaction design</a><a href="../geogrid-specification/">Geogrid specification</a><a href="../geotextile-specification/">Geotextile specification</a><a href="../lime-cement-stabilization/">Lime and cement stabilization</a><a href="../landfill-geotechnics/">Landfill geotechnics</a><a href="../organic-soil-management/">Organic soil management</a></div></div><div class="cat-item" data-cat="underground-excavations"><div class="cat-row"><a href="../underground-excavations/" class="cat-name">Underground Excavations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Underground Excavations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="../geotechnical-analysis-soft-soil/">Geotechnical analysis for soft soil tunnels</a><a href="../geotechnical-design-deep-excavations/">Geotechnical design of deep excavations</a></div></div><div class="cat-item" data-cat="road-geotechnics"><div class="cat-row"><a href="../road-geotechnics/" class="cat-name">Road Geotechnics</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Road Geotechnics"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="../flexible-pavement-design/">Flexible pavement design</a><a href="../rigid-pavement-design/">Rigid pavement design</a><a href="../road-subgrade-design/">Road subgrade design</a><a href="../road-embankment-design/">Road embankment design</a><a href="../existing-pavement-evaluation/">Existing pavement evaluation</a><a href="../pavement-subgrade-design/">Road geotechnics (pavement/subgrade design)</a></div></div><div class="cat-item" data-cat="seismic"><div class="cat-row"><a href="../seismic/" class="cat-name">Seismic</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Seismic"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="../site-response-analysis/">Site response analysis</a><a href="../base-isolation-seismic-design/">Base isolation seismic design</a></div></div></aside>
     <main>
         <p>Oakland’s slopes are shaped by Franciscan Complex bedrock, marine terrace deposits, and deep colluvial soils, creating conditions where even moderate grading can trigger instability. Our work addresses these challenges through rigorous <a href="soil-erosion-analysis">soil erosion analysis</a> and <a href="slope-stability-analysis">slope stability analysis</a> that satisfy California Building Code Chapter 18 and local Oakland grading ordinances. We evaluate rainfall-induced failures, seismic performance under ASCE 7-16, and long-term creep in clay-rich formations common to the East Bay hills.</p>
-<p>Residential hillside developments, roadway cuts along Highway 13, and landslide repair programs all demand defensible geotechnical input. We support these projects with detailed <a href="factor-safety">factor of safety (FS) calculation</a> and <a href="slope-stabilization-design">slope stabilization design</a>, integrating soil nail walls, subdrain systems, and reinforced fills where necessary. Every deliverable aligns with Oakland’s strict hillside development standards and CGS Seismic Hazard Zone mapping requirements.</p><figure style="margin:1.5rem auto;max-width:720px;text-align:center"><img src="/img/limites-atterberg-3.webp" loading="lazy" decoding="async" width="800" height="600" alt="Illustrative image of Atterberg limits in Oakland" style="width:100%;height:auto;display:block;border-radius:8px;border:1px solid #E5E7EB"></figure>
-
-        <blockquote style="border-left:4px solid #A78BFA;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">A plasticity index above 30 in Oakland clays signals high shrink-swell potential, requiring special foundation detailing per the IBC.</blockquote>
-
-        
-
-        <h2>Methodology and scope</h2><div>Our Oakland lab uses the Casagrande cup method for liquid limit and the hand-rolling technique for plastic limit, strictly following ASTM D4318. The process begins with a representative sample of material passing the No. 40 sieve. For the liquid limit, we groove the soil paste and count the blows required to close the groove—typically between 15 and 35 blows across multiple trials. The plastic limit is determined by rolling the soil into a 3.2 mm thread until it crumbles. Both values are plotted on a flow curve to calculate the plasticity index (PI). A high PI indicates expansive clays common in the East Bay alluvial fans. We log every moisture content with precision balances and drying ovens calibrated to NIST standards. This data also feeds into our <a href="../existing-pavement-evaluation/">evaluacion pavimentos</a> work, where the PI helps predict subgrade performance under Oakland's wet-season traffic loads. The entire test cycle takes about 48 hours from sample arrival.</div>
-        <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Local considerations</h2><p>ASCE 7 and the California Building Code (based on IBC) mandate site-specific geotechnical investigations for Oakland projects, especially in Seismic Design Category D. The primary risk with ignoring Atterberg limits is misclassifying the soil. A silt classified by feel alone may actually be a highly plastic clay, leading to inadequate foundation depth or improper compaction specs. The 1989 Loma Prieta earthquake showed how Bay mud amplifies ground motion, but the secondary hazard—liquefaction and lateral spreading—is equally tied to soil plasticity. Non-plastic silts are far more susceptible than plastic clays. Without accurate limits, your earthwork contractor might over-compact a clay layer, creating a brittle slab prone to cracking. We cross-reference our PI results with the USCS classification to flag soils that fall into the CH or MH groups, which demand more rigorous structural controls.</p>
-
-        
-    <section class="block mid-cta" style="padding:2rem 0">
+<p>Residential hillside developments, roadway cuts along Highway 13, and landslide repair programs all demand defensible geotechnical input. We support these projects with detailed <a href="factor-safety">factor of safety (FS) calculation</a> and <a href="slope-stabilization-design">slope stabilization design</a>, integrating soil nail walls, subdrain systems, and reinforced fills where necessary. Every deliverable aligns with Oakland’s strict hillside development standards and CGS Seismic Hazard Zone mapping requirements.</p>
+<section class="block mid-cta-2352" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#A78BFA15,#A78BFA08);border-left:4px solid #A78BFA;padding:1.5rem 1.8rem;border-radius:6px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>
         <p style="margin:0 0 1rem;color:#64748B;font-size:.92rem;text-align:center">Reply within 24h.</p>
         <a href="mailto:contact@geotechnicalengineering1.biz" style="display:inline-block;background:#A78BFA;color:#FFF !important;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:800;font-size:1.05rem;box-shadow:0 4px 12px rgba(0,0,0,.15)">Email: contact@geotechnicalengineering1.biz</a>
-      </div>
-    </section>
-
-        
-
-        <h2>Applicable standards</h2><p>ASTM D4318-17e1 (Standard Test Methods for Liquid Limit, Plastic Limit, and Plasticity Index of Soils), ASTM D2487-17 (Standard Practice for Classification of Soils for Engineering Purposes - USCS), Caltrans Soil and Rock Logging, Classification, and Presentation Manual (2016)</p>
-
-        
-    <section class="block sub-services-block" style="padding:3.5rem 1.5rem">
-      <style>
-        .sub-svc-grid { display:flex; flex-wrap:wrap; gap:1.5rem; margin-top:1.5rem; justify-content:center; }
-        .sub-svc-grid > .sub-svc, .sub-svc-grid > a.sub-svc { flex:0 0 calc(50% - 0.75rem); min-width:220px; padding:1rem 1.2rem; border:1px solid #E5E7EB; border-radius:10px; background:#FFFFFF; transition:border-color .18s ease, box-shadow .18s ease, transform .18s ease; position:relative; }
-        .sub-svc-grid > a.sub-svc-link { display:block; text-decoration:none; color:inherit; cursor:pointer; }
-        .sub-svc-grid > a.sub-svc-link:hover { border-color:#A78BFA; box-shadow:0 4px 14px rgba(0,0,0,.08); transform:translateY(-2px); }
-        .sub-svc-grid > a.sub-svc-link:hover h3 { color:#A78BFA; }
-        .sub-svc-grid > a.sub-svc-link:hover .sub-svc-arrow { transform:translateX(4px); opacity:1; }
-        .sub-svc-arrow { position:absolute; right:1rem; bottom:.9rem; color:#A78BFA; font-weight:700; font-size:1.1rem; opacity:.6; transition:transform .18s ease, opacity .18s ease; }
-      </style>
-      <div style="max-width:1200px;margin:0 auto">
-        <h2 style="margin-bottom:1.5rem;font-weight:700">Associated technical services</h2>
-        <div class="sub-svc-grid">
-          <div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">01</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Full Atterberg Limits (LL, PL, PI, SL)</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Complete determination of liquid limit, plastic limit, plasticity index, and shrinkage limit on a single sample. Includes flow curve plotting and USCS classification.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">02</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Multi-Depth Plasticity Profiling</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Testing Atterberg limits at multiple borehole depths to map lateral and vertical variability of clay layers across your Oakland site. Essential for deep excavation and <a href="../retaining-wall-design/" data-interlink="1">retaining wall design</a>.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A78BFA;font-weight:700;font-size:.85rem;letter-spacing:.1em">03</div><h3 style="color:#09090B;font-size:1.1rem;margin:.3rem 0 .5rem">Expansive Soil Index Testing</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Correlation of PI data with free swell and swell pressure tests for projects in Oakland's clay-prone hillside areas. Helps quantify the risk of foundation heave.</p></div>
-        </div>
-      </div>
-    </section>
-
-        <h2>Typical parameters</h2><div style="max-width:700px;margin:1.5rem auto;border-left:4px solid #A78BFA;border-radius:6px;overflow:hidden;background:#FFF;box-shadow:0 1px 3px rgba(0,0,0,.05)"><table style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr style="background:#A78BFA;color:#FFF"><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Parameter</th><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Typical value</th></tr></thead><tbody><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Liquid Limit (LL)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">30 – 70 (typical Oakland clay range)</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Plastic Limit (PL)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">15 – 30 (varies with silt content)</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Plasticity Index (PI)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">10 – 40 (PI = LL - PL)</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Shrinkage Limit (SL)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">8 – 18 (for volume change prediction)</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Activity Ratio</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">0.5 – 1.5 (PI / % clay fraction)</td></tr></tbody></table></div>
-
-        <h2>Frequently asked questions</h2><details class="faq"><summary>Why are Atterberg limits specifically important for Oakland construction?</summary><p>Oakland has a mix of alluvial clays from creek deposits and older marine clays in the flatlands. These soils have widely varying plasticity. Without Atterberg limits, you risk foundation heave in wet winters or excessive settlement during dry summers. The data directly informs the shrink-swell hazard classification required by the California Building Code.</p></details><details class="faq"><summary>What is the typical cost range for Atterberg limits testing in Oakland?</summary><p>A standard Atterberg limits test (LL, PL, PI) in Oakland typically costs between US$60 and US$100 per sample. This price covers preparation, testing, and a certified report with flow curve. Volume discounts apply for multi-sample projects from the same site.</p></details><details class="faq"><summary>How long does it take to get Atterberg limits results?</summary><p>Our typical turnaround is 48 to 72 hours from sample drop-off. The test itself requires oven drying of the soil fractions, which sets the timeline. For rush projects, we can expedite within 24 hours for an additional fee.</p></details><details class="faq"><summary>Can Atterberg limits be used to predict soil behavior during earthquakes?</summary><p>Yes, indirectly. Plasticity index correlates with cyclic strength and liquefaction resistance. Non-plastic silts (PI less than 5) are highly susceptible to liquefaction, while clays with PI above 20 generally behave differently under seismic loading. In Oakland, this distinction is critical near the estuary and in filled Bay margins.</p></details>
-    
-    <section class="block map-block" style="padding:3rem 1.5rem">
-      <div style="max-width:1200px;margin:0 auto">
-        <h2 style="margin-bottom:.8rem;font-weight:700">Location and service area</h2>
-        <p style="margin-bottom:1rem;color:#555">We serve projects across Oakland.</p>
-        <div class="map-wrap" style="position:relative;max-width:520px;margin:0 auto;aspect-ratio:4/3;border-radius:8px;overflow:hidden;border:1px solid #E5E7EB">
-          <div id="map_2352c8_5dc9" style="position:absolute;top:0;left:0;width:100%;height:100%"></div>
-        </div>
-        <script>
-        (function(){
-          if (typeof L === "undefined") return;
-          var m=L.map("map_2352c8_5dc9",{zoomControl:true,attributionControl:true}).setView([37.8044557,-122.271356],11);
-          L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
-            attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
-          }).addTo(m);
-          L.marker([37.8044557,-122.271356]).addTo(m).bindPopup("Oakland");
-        })();
-        </script>
-        <div style="margin-top:.5rem;font-size:.78rem;color:#888;text-align:center">
-          <a href="https://www.openstreetmap.org/?mlat=37.8044557&mlon=-122.271356#map=11/37.8044557/-122.271356" target="_blank" rel="noopener">Location and service area</a>
-        </div>
       </div>
     </section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../soil-erosion-analysis/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Soil erosion analysis</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../slope-stability-analysis/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Slope stability analysis</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../debris-flow-analysis/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Debris flow analysis</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../factor-safety/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Factor of safety (FS) calculation</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../slope-stabilization-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Slope stabilization design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../retaining-wall-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Retaining wall design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../sheet-pile-wall-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Sheet pile wall design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../landslide-assessment/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Landslide assessment</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../geotechnical-slope-monitoring/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotechnical slope monitoring (monthly)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
@@ -198,12 +135,12 @@ img{max-width:100%!important;height:auto!important}
     var el=document.getElementById('map-leaflet');
     if(!el)return;
     var map=L.map(el).setView([37.8044557,-122.271356],12);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:18}).addTo(map);
+    L.tileLayer('https://{s}.tile-2352.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:18}).addTo(map);
     L.marker([37.8044557,-122.271356]).addTo(map).bindPopup("Oakland").openPopup();
   }
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
 })();
 </script>
-<footer style="background:#09090B;color:rgba(255,255,255,.85);padding:3rem 1.5rem 1.5rem"><div style="max-width:720px;margin:0 auto;text-align:center"><h4 style="color:#FFF;font-size:1.15rem;margin:0 0 .3rem">Technical updates</h4><p style="margin:0 0 1.2rem;color:rgba(255,255,255,.65);font-size:.95rem">Get email updates</p><form action="mailto:contact@geotechnicalengineering1.biz" method="post" enctype="text/plain" style="display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap"><input type="email" name="email" placeholder="Your email" style="padding:.7rem 1rem;border-radius:6px;border:none;font-size:.95rem;min-width:220px"><button type="submit" style="background:#A78BFA;color:#FFF;padding:.7rem 1.4rem;border:none;border-radius:6px;font-weight:700;cursor:pointer">Subscribe</button></form><p style="margin:1.5rem 0 0;font-size:.82rem;color:rgba(255,255,255,.5)">Oakland, USA · <a href="mailto:contact@geotechnicalengineering1.biz" style="color:rgba(255,255,255,.7)">contact@geotechnicalengineering1.biz</a> · © 2026</p></div><div data-updated="2026-03-13" style="font-size:.78rem;color:rgba(255,255,255,.6);margin-top:.8rem">Last updated: 2026-03-12</div><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>References:</strong> <a href="https://www.astm.org/products-services/standards-and-publications.html" rel="nofollow noopener" target="_blank">ASTM Standards</a> · <a href="https://www.publications.usace.army.mil/USACE-Publications/Engineer-Manuals/" rel="nofollow noopener" target="_blank">USACE Engineer Manuals</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Geotechnical</a></div></footer>
+<footer style="background:#09090B;color:rgba(255,255,255,.85);padding:3rem 1.5rem 1.5rem"><div style="max-width:720px;margin:0 auto;text-align:center"><h4 style="color:#FFF;font-size:1.15rem;margin:0 0 .3rem">Technical updates</h4><p style="margin:0 0 1.2rem;color:rgba(255,255,255,.65);font-size:.95rem">Stay informed</p><form action="mailto:contact@geotechnicalengineering1.biz" method="post" enctype="text/plain" style="display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap"><input type="email" name="email" placeholder="Your email" style="padding:.7rem 1rem;border-radius:6px;border:none;font-size:.95rem;min-width:220px"><button type="submit" style="background:#A78BFA;color:#FFF;padding:.7rem 1.4rem;border:none;border-radius:6px;font-weight:700;cursor:pointer">Subscribe</button></form><p style="margin:1.5rem 0 0;font-size:.82rem;color:rgba(255,255,255,.5)">Oakland, USA · <a href="mailto:contact@geotechnicalengineering1.biz" style="color:rgba(255,255,255,.7)">contact@geotechnicalengineering1.biz</a> · © 2026</p></div><div data-updated="2026-03-13" style="font-size:.78rem;color:rgba(255,255,255,.6);margin-top:.8rem">Last updated: 2026-03-12</div><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>References:</strong> <a href="https://www.astm.org/products-services/standards-and-publications.html" rel="nofollow noopener" target="_blank">ASTM Standards</a> · <a href="https://www.publications.usace.army.mil/USACE-Publications/Engineer-Manuals/" rel="nofollow noopener" target="_blank">USACE Engineer Manuals</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Geotechnical</a></div></footer>
 
 <script>(function(){document.querySelectorAll(".cat-toggle").forEach(function(b){b.addEventListener("click",function(e){e.preventDefault();var s=b.parentElement.parentElement.querySelector(".cat-sub");var ex=b.getAttribute("aria-expanded")==="true";b.setAttribute("aria-expanded",!ex);if(s){s.hidden=ex;}});});})();</script></body></html>
