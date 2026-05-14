@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#556B2F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Approach and scope</h2><div>The Bay Mud underlying much of Oakland is soft, highly plastic, and prone to large settlements under load. N-values in this unit typically range from 0 to 4 blows per foot. In contrast, the alluvial terrace deposits near Piedmont can show N-values above 50. Our SPT program follows ASTM D1586-18 strictly. We use a safety hammer with automatic trip release to ensure consistent energy delivery. Each test records blows per 6-inch interval for the full 18-inch drive. We also record rod length corrections and hammer efficiency on every borehole. This data feeds directly into bearing capacity calculations using Terzaghi's method or Meyerhof's approach depending on foundation type. For sites on the Oakland Hills colluvium, we integrate the results with <a href="../slope-stability-analysis/">stability analysis for cut slopes</a> to assess landslide risk during grading.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Site-specific factors</h2><p>ASCE 7-22 and the California Building Code (CBC) mandate site-specific seismic hazard analysis for all new buildings in Oakland. The city lies within Seismic Zone 4, with peak ground accelerations up to 0.6g. Liquefaction hazard is high along the estuary and around Lake Merritt, where shallow groundwater sits within 5 feet of the surface. An SPT program is the primary tool for evaluating liquefaction triggering using the Seed-Idriss simplified procedure (Youd et al., 2001). Without reliable N-values corrected to an energy ratio of 60% (N60), the calculated factor of safety against liquefaction can be misleading. We have seen projects where uncorrected blow counts overestimated liquefaction resistance by nearly 30%. That is a risk no engineer should accept in Oakland.</p>
+        <h2>Site-specific factors</h2><p>ASCE 7-22 and the California Building Code (CBC) mandate site-specific seismic hazard analysis for all new buildings in Oakland. The city lies within Seismic Zone 4, with peak ground accelerations up to 0.6g. Liquefaction hazard is high along the estuary and around Lake Merritt, where shallow groundwater sits within 5 feet of the surface. An SPT program is the primary tool for evaluating liquefaction triggering using the Seed-Idriss simplified procedure (Youd et al., 2001). Without reliable N-values corrected to an energy ratio of 60% (N60), the calculated <a href="/factor-safety/">factor of safety</a> against liquefaction can be misleading. We have seen projects where uncorrected blow counts overestimated liquefaction resistance by nearly 30%. That is a risk no engineer should accept in Oakland.</p>
 
         
     <section class="block mid-cta-2352" style="padding:2rem 0">

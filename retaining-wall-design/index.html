@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#556B2F) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Approach and scope</h2><div>The Bay Area's seasonal rainfall and the high water table in low-lying parts of Oakland force us to consider both short-term undrained and long-term drained conditions in every retaining wall design. Our approach always starts with a thorough subsurface investigation – typically a combination of test pits and SPT borings – to identify the soil type, density, and presence of perched water. We then model the wall using the relevant parameters: unit weight, friction angle, cohesion, and the seismic coefficient from ASCE 7. For walls higher than 6 feet we also incorporate <a href="../geotechnical-drainage-design/">drainage geotextiles</a> behind the wall face to prevent hydrostatic buildup, which is a common cause of failure in the region. Every design includes an internal stability check, an overturning check, and a sliding check against the base soil.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Site-specific factors</h2><p>ASCE 7-22 classifies most of Oakland as Site Class D (stiff soil) or C (very dense soil/soft rock), but the interface between these units is where trouble hides. The primary risk we flag is the presence of a weak layer – often a clayey silt or weathered shale – that can act as a slip surface behind the wall. If that layer is saturated, the shear strength drops dramatically. We always check the global stability of the wall-soil system using a limit-equilibrium method (Bishop simplified or Spencer) and recommend a minimum factor of safety of 1.5 for static and 1.1 for seismic conditions. Retaining wall design in Oakland demands that we treat the soil as a variable, not a constant.</p>
+        <h2>Site-specific factors</h2><p>ASCE 7-22 classifies most of Oakland as Site Class D (stiff soil) or C (very dense soil/soft rock), but the interface between these units is where trouble hides. The primary risk we flag is the presence of a weak layer – often a clayey silt or weathered shale – that can act as a slip surface behind the wall. If that layer is saturated, the shear strength drops dramatically. We always check the global stability of the wall-soil system using a limit-equilibrium method (Bishop simplified or Spencer) and recommend a minimum <a href="/factor-safety/">factor of safety</a> of 1.5 for static and 1.1 for seismic conditions. Retaining wall design in Oakland demands that we treat the soil as a variable, not a constant.</p>
 
         
     <section class="block mid-cta-2352" style="padding:2rem 0">
